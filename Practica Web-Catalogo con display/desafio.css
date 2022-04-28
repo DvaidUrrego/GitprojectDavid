@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content,.footer-content {
+    box-shadow: 0 1px 8px rgba(128, 87, 33, 0.911);
+}
+
+footer{
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: #804000;
+}
+
+.header-logo-coffi,
+.menu,
+.header-logo-coffi {
+    display: inline-block;
+}
+
+.incon{
+    width: 125;
+    height: 75px;
+}
+
+.imgcontent{
+    width: 200px;
+    height: 140px;
+}
+
+.imgprod{
+    width: 200px;
+    height: 220px;
+    box-shadow: 0 1px 8px rgba(128, 87, 33, 0.911);
+}
+
+.menu {
+    text-align: left;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+li,
+a {
+    color: #804000;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+li :hover {
+    color: #fff;
+    background-color: #804000;
+    border-radius: 10px;
+}
+
+.menu li,
+a {
+    display: inline-block;
+    list-style: none;
+    margin: 2px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-contentrigth {
+    box-shadow: 0 1px 8px rgba(128, 87, 33, 0.911);
+    margin-top: 1%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.main-contentrigth-div {
+    border-radius: 5px;
+    box-shadow: 0 1px 8px rgba(128, 87, 33, 0.911);
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-contentleft {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    padding: 4%;
+}
+
+.main-contentleft-list li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;  
+}
+
