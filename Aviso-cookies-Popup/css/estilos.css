@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+main {
+  margin: 20px auto;
+  max-width: 2000px;
+  background: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.aviso-cookies {
+  display: none; /*Actividador del display cookies*/
+  background: linear-gradient(to top, #f3ecec 0%, #ed3237 100%);
+  padding: 20px;
+  width: calc(100% - 40px);
+  max-width: 300px; /*Maximo de ancho*/
+  line-height: 150%; /*espaciado del texto*/
+  border-radius: 10px;
+  position: fixed; /*Es posicionado con relación al bloque contenedor inicial*/
+  bottom: 5px;
+  left: 20px;
+  z-index: 100; /*Asegurar que todos los elementos esten por encima*/
+  padding-top: 60px;
+  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, 0.25); /*Sombra*/
+  text-align: center;
+}
+
+.aviso-cookies.activo {
+  display: block;
+}
+
+/* .aviso-cookies .stop {
+  max-width: 100px;
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 50px);
+} */
+/*
+
+*/
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+  margin-bottom: 15px; /* tetxo*/
+}
+
+.aviso-cookies .boton {
+  width: 100%; /*Boton ocupara el 100% de la caja*/
+  background: rgb(122, 91, 91);
+  border: none; /*Se retira el borde que trae el boton por defecto*/
+  color: #fff; /*Color dle texto del boton*/
+  font-family: "Roboto", sans-serif; /*Fuente del texto*/
+  text-align: center; /*centrar el texto del boton*/
+  padding: 15px 20px;
+  font-weight: 700; /*Tamaño de negritas*/
+  cursor: pointer; /*Fecto del cursos*/
+  transition: 0.3s ease all; /*tiempo para todas las propiedades */
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+  /*Efecto de cursos, cambia el color*/
+  background: #ed3237;
+}
+
+.aviso-cookies .enlace {
+  color: #2f4450; /*Color del enlace*/
+  text-decoration: none; /*Quitar subrallado del enlace*/
+  font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+  color: #ed3237; /*Color del enlace cuando sobre el cursor*/
+  text-decoration: underline; /*Activar el subrallado del enlace*/
+}
+
+.fondo-aviso-cookies {
+  display: none; /*Bloqueo del fondo*/
+  background: rgba(0, 0, 0, 0.2); /*color de fondo con transparencia*/
+  position: fixed; /*Posicionamiento tipo fijo en pantalla*/
+  z-index: 99; /*Componente queda rriba del fondo por eso 99 menor al de z.index de la caja inicial que esta de 100 */
+  width: 100vw; /*Permite adaptar el ancho del fondo con el viewport*/
+  height: 100vh; /*Permite adaptar el alto del fondo con el viewport*/
+  top: 0;
+  left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+  display: block;
+}
+
+@media (max-width: 478px) {
+  .aviso-cookies {
+    width: 90%;
+    max-width: 900px;
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .aviso-cookies {
+    width: 90%;
+    max-width: 900px;
+    bottom: 5%;
+    left: 5%;
+  }
+}
